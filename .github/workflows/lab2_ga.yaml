@@ -1,0 +1,21 @@
+name: Java Lab Workflow
+
+on:
+  workflow_dispatch:   # Allows manual trigger from GitHub UI
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Compile Java code
+        run: |
+          cd myapp
+          javac *.java
+
+      - name: Run Java program
+        run: |
+          cd myapp
+          java Main
