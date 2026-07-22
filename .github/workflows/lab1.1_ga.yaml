@@ -1,0 +1,12 @@
+name: Devops Lab Workflow 2
+on:
+ workflow_dispatch: # Allows manual trigger from Github UI
+
+jobs:
+ echo-steps:
+  runs-on: ubuntu-latest
+  steps:
+   - name: First Step
+     run: echo "This is first step"
+   - name: Second Step
+     run: echo "This is second step"
