@@ -1,5 +1,5 @@
 # Use official Java runtime as base
-FROM openjdk:17-jdk-slim
+FROM amazoncorretto:17-alpine
 
 # Set working directory inside container
 WORKDIR /app
