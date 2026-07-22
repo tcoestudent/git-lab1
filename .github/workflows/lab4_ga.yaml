@@ -1,4 +1,4 @@
-name: Java Lab Workflow
+name: Java Lab Workflow with Trigger on push/commit event 
 on:
  push:
   branches:
